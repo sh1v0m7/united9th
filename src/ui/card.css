@@ -1,0 +1,32 @@
+.cardbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+ 
+}
+
+  .card{
+    
+    margin-top: 20px;
+    min-height: 240px;
+    width: 100%;
+    max-width: 350px;
+    background-color:#5e5b5b25;
+    color: #000000;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .card img{
+    width: 100%;
+    border-radius: 10px;
+  }
+  .card .card-title{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+  @media (max-width:768px){
+    .cardbox{
+      margin: auto;
+    }
+  }

@@ -1,0 +1,79 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+  background-color: #ffffff;
+}
+.navbar{
+  
+  background-color:#470fff;
+  height:55px;
+  width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  color: #fff;
+  z-index: 4;
+}
+.navbar ul{
+  display: flex;
+}
+.navbar ul li{
+  list-style: none;
+  padding-right: 20px;
+  font-weight: 600;
+ 
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+.navbar h1{
+  font-size: 1.7rem;
+  padding-left: 10px;
+  
+}
+/* Container for the search bar */
+.search-bar {
+  margin: 20px auto; /* Center the search bar and add margin */
+  max-width: 600px; /* Set a maximum width for the search bar */
+  padding: 0 20px; /* Add horizontal padding */
+}
+
+/* Style the search input field */
+.search-bar input {
+  width: 100%; /* Make the input field take the full width of the container */
+  padding: 10px 15px; /* Add padding inside the input field */
+  font-size: 16px; /* Increase font size for better readability */
+  border: 2px solid #ccc; /* Set a border around the input field */
+  border-radius: 5px; /* Add rounded corners to the input field */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for a lifted effect */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Add transition effects for border color and shadow */
+}
+
+/* Style for the input field on focus */
+.search-bar input:focus {
+  border-color: #007bff; /* Change border color on focus */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Add a stronger shadow on focus */
+  outline: none; /* Remove default outline */
+}
+
+@media (max-width:768px){
+  .navbar{
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .navbar h1{
+    padding-top: 10px;
+  }
+  .navbar ul{
+    margin-top: 10px;
+  }
+  .Cardbox{
+    min-height: calc(100vh - 80px);
+  }
+}
